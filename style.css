@@ -5,9 +5,10 @@
 }
 
 div{
-  border: 1px solid black;
+  border: 4px dashed black ;
   padding: 15px; 
 }
+
 
 /* ------ Small  screen --------*/
 @media screen and (max-width: 300px) {
