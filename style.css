@@ -4,37 +4,35 @@
   box-sizing: border-box; 
 }
 
-@media (max-width: 300px) {
+div{
+  border: 1px solid black;
+  padding: 15px; 
+}
+
+/* ------ Small  screen --------*/
+@media screen and (max-width: 300px) {
     body {
       background-color: red;
       font-size: 16px;
     }
-    
-    #small {
-      width: 66.6%;
-      display: none;
-    }
-    #medium {
-      width: 34%;
-    }
-    #large {
-      width:100%;
-    }
+
 
   }
-  @media (min-width: 300px) {
+
+/* ------ medium screen --------*/
+  @media screen and (min-width: 301px) and (max-width: 768px) {
     body {
       background-color: green;
       font-size: 18px;
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: wrap; 
     }
+
     #small {
       width: 66%;
-
-      
-      
     }
+
+
     #medium {
       width: 34%; 
       
@@ -44,10 +42,11 @@
       width:100%;
       
     }
+}
 
-    
 
-  @media ( min-width: 768px) {
+/* ------ Large  screen --------*/
+  @media screen and ( min-width: 769px) {
     body {
       background-color: lightblue;
       font-size: 20px;
